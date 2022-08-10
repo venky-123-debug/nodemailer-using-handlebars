@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email-Sender</title>
+  <link rel="stylesheet" href="public/css/style.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+</head>
+
+<body>
+  <div class=" container">
+    <h1 class=" brand"><span> Email</span></h1>
+    <div class="wrapper animated bounceInLeft">
+      <div class="company-info">
+        <h3>Email-Sender</h3>
+        <ul>
+          <li><i class="fa fa-address"></i> temple street </li>
+          <li><i class="fa fa-mobile"></i> (+91) 123 3333</li>
+          <li><i class="fa fa-email"></i> some@some.test</li>
+        </ul>
+      </div>
+      <div class="contact">
+        <h3> Contact Us</h3>
+        {{msg}}
+        <form action="send" method="POST">
+          <p>
+            <label> Your name</label>
+            <input type="text" name="name">
+          </p>
+          <p>
+            <label> Company</label>
+            <input type="text" name="company">
+          </p>
+          <p>
+            <label> Email-Id</label>
+            <input type="text" name="email">
+          </p>
+          <p>
+            <label> Contact Number</label>
+            <input type="text" name="name">
+          </p>
+          <p class="full">
+            <label> Message</label>
+            <textarea name="message" cols="30" rows="5"></textarea>
+
+          </p>
+          <p class="full">
+            <button type="submit">Submit</button>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
